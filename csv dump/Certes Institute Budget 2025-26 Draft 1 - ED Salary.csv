@@ -1,0 +1,23 @@
+CEO equivalent salaries,,,,,,
+,,,,,,
+Role / org,Jurisdiction & currency,,USD,Converted,Reported base/comp,Notes / source
+APS EL2.1 (Australian Public Service),Australia • AUD,AUD,,"$162,193.00","$162,193 (from 13 Mar 2025)",Treasury EA Appendix A pay table. (ea.treasury.gov.au)
+APS EL2.4 (top step),Australia • AUD,AUD,,"$186,140.00","$186,140 (from 13 Mar 2025)",Treasury EA Appendix A. (ea.treasury.gov.au)
+Tasmanian SES 1 (base),Tasmania • AUD,AUD,,"$147,116.00","$147,116","Employment Direction No.17, Attachment 1B (1 Jul 2023)."
+Tasmanian SES 2 (base),Tasmania • AUD,AUD,,"$173,328.00","$173,328","ED No.17, Attachment 1B."
+Tasmanian SES 3 (base),Tasmania • AUD,AUD,,"$209,001.00","$209,001","ED No.17, Attachment 1B."
+ANU Level C3 (Senior Lecturer),Australia • AUD,AUD,,"$158,323.00","$158,323 (3 Jul 2025 step)",ANU academic salary schedule. (services.anu.edu.au)
+ANU Level D1 (Assoc. Prof.),Australia • AUD,AUD,,"$170,227.00","$170,227 (3 Jul 2025 step)",ANU academic salary schedule. (services.anu.edu.au)
+ANU Level E1 (Professor),Australia • AUD,AUD,,"$209,923.00","$209,923 (3 Jul 2025 step)",ANU academic salary schedule. (services.anu.edu.au)
+CAIS – Executive Director (Daniel Hendrycks),USA • USD,USD,213641,"$328,911.22","$213,641 (FY2023 Form 990)",Center for AI Safety 990 summary. (ProPublica)
+FAR AI – CEO (Adam Gleave),USA • USD,USD,143628,"$221,122.63","$143,628 (FY2023 Form 990)",FAR AI 990 summary. (ProPublica)
+FAR AI – COO (Karl Berzins),USA • USD,USD,161060,"$247,960.08","$161,060 (FY2023 Form 990)",FAR AI 990 summary. (ProPublica)
+ARC (Alignment Research Center) – Researcher (Jacob Hilton),USA • USD,USD,298652,"$459,789.99","$298,652 (FY2023 Form 990)",ARC 990 summary (top research staff comp). (ProPublica)
+ARC – Evals Project Lead (Elizabeth Barnes),USA • USD,USD,224756,"$346,023.32","$224,576 (FY2023 Form 990)",ARC 990 summary. (ProPublica)
+ARC – Member of Technical Staff (Luke Miles),USA • USD,USD,203601,"$313,454.12","$203,601 (FY2023 Form 990)",ARC 990 summary. (ProPublica)
+Timaeus – Research roles (upper band),Global • USD,USD,140000,"$215,537.14","$140,000 (range top)",Public job post range USD 70k–140k. (LessWrong)
+Timaeus – Research roles (mid band),Global • USD,USD,100000,"$153,955.10","$100,000 (range mid)",Same posting; using mid of stated range. (LessWrong)
+Gradient Institute – Principal Researcher,Australia • AUD,AUD,,180000,"$180,000 (est. base)",Glassdoor estimate (directional datapoint). (Glassdoor)
+Principal Researcher – AU market,Australia • AUD,AUD,,"$150,000.00","$150,000 (avg)",Glassdoor AU “Principal Researcher” overview. (Glassdoor)
+Principal Scientist – AU market,Australia • AUD,AUD,,"$146,034.00","$146,034 (avg)",PayScale 2025 snapshot. (Payscale)
+NFP CEO – Australia (all-sector),Australia • AUD,AUD,,"$145,136.00","$145,136 (avg)","PayScale “CEO, Non-Profit Organization” (2025). (Payscale)"

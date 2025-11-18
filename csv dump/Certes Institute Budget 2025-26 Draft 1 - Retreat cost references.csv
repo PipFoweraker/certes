@@ -1,0 +1,31 @@
+Variable,Value,Notes
+Number of people,30,Total attendees
+Food cost per person per day,15,USD
+Flight cost per person,"1,500",Round trip average
+Venue cost per week,"7,500",Weekly venue rental
+Equipment cost (one-time),"5,000","Computers, desks, chairs"
+Activities / outings,"3,000",Optional excursions
+Living cost per person per day,40,"Utilities, transport, etc."
+Contingency rate,10.00%,10% buffer
+,,
+,,
+2 weeks,,
+Duration (days),14,Retreat length
+Duration (weeks),2,
+Food cost total,"$6,300.00",
+Travel cost total,"$45,000.00",
+Venue cost total,"$15,000.00",
+Living cost pppd,"$16,800.00",
+Total 2 weeks,"$91,100.00",
+,,
+4 weeks,,
+Duration (4 weeks) (Days),28,
+Duration (4 weeks) (Weeks),4,
+Food cost total,"$12,600.00",
+Travel cost total,"$45,000.00",
+Venue cost total,"$30,000.00",
+Living cost pppd,"$33,600.00",
+Total 4 weeks,"$129,200.00",
+,,
+"2 weeks, half attendees 2x more",,
+TODO,,

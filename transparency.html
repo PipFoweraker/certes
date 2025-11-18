@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Financial transparency at Certes Institute - our budget, funding sources, and expenditure.">
+    <title>Transparency | Certes Institute</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Additional styles for budget tables */
+        .budget-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: var(--spacing-md);
+            font-size: 0.9rem;
+        }
+
+        .budget-table th,
+        .budget-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .budget-table th {
+            font-weight: 600;
+            color: var(--color-primary-dark);
+            background: var(--color-background-alt);
+        }
+
+        .budget-table td.amount {
+            text-align: right;
+            font-family: 'Source Sans Pro', monospace;
+        }
+
+        .budget-table tr.total {
+            font-weight: 600;
+            background: var(--color-background-alt);
+        }
+
+        .budget-table tr.subtotal {
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .budget-note {
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+            font-style: italic;
+            margin-top: var(--spacing-xs);
+        }
+
+        .funding-status {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .status-confirmed {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-projected {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .status-self-funded {
+            background: #e2e3e5;
+            color: #383d41;
+        }
+
+        .last-updated {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            text-align: right;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .highlight-box {
+            background: var(--color-background-alt);
+            border-left: 3px solid var(--color-secondary);
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="site-logo">
+                <h1>Certes Institute</h1>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: var(--spacing-lg) 0;">
+        <div class="container">
+            <h1>Financial Transparency</h1>
+            <p class="lead">
+                We believe in radical transparency about how we fund and spend resources.
+                This page details our proposed budget, actual expenditure, and funding sources.
+            </p>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="section">
+        <div class="container container-narrow">
+            <p class="last-updated">Last updated: 18 November 2025</p>
+
+            <div class="highlight-box">
+                <h3>Current Status: Self-Funded Establishment Phase</h3>
+                <p>
+                    Certes Institute is currently being established with founder capital. All establishment
+                    costs to date have been self-funded, with no external grants or donations received yet.
+                    We are seeking philanthropic funding for our 2026 research programme.
+                </p>
+            </div>
+
+            <h2>Why We Publish Our Budget</h2>
+            <p>
+                Transparency in funding and expenditure is essential for accountability in the
+                catastrophic risk field. We publish our budget to:
+            </p>
+            <ul>
+                <li>Demonstrate responsible stewardship of resources</li>
+                <li>Enable donors to understand how their contributions are used</li>
+                <li>Model good governance practices for the field</li>
+                <li>Allow scrutiny of our priorities and resource allocation</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Funding Sources -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>FY2025-26 Funding Sources (Proposed)</h2>
+            <p class="budget-note">This shows our projected funding. Actual funding received will be updated as grants are confirmed.</p>
+
+            <table class="budget-table">
+                <thead>
+                    <tr>
+                        <th>Source</th>
+                        <th>Type</th>
+                        <th class="amount">Amount</th>
+                        <th>Status</th>
+                        <th>Timing</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Founder seed capital</td>
+                        <td>Self-funded</td>
+                        <td class="amount">$15,000</td>
+                        <td><span class="funding-status status-confirmed">Confirmed</span></td>
+                        <td>October 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Donated non-deductible capital</td>
+                        <td>Donation</td>
+                        <td class="amount">$10,000</td>
+                        <td><span class="funding-status status-confirmed">Confirmed</span></td>
+                        <td>November 2025</td>
+                    </tr>
+                    <tr>
+                        <td>AISTOF Grant</td>
+                        <td>Grant</td>
+                        <td class="amount">$50,000</td>
+                        <td><span class="funding-status status-projected">Projected</span></td>
+                        <td>December 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Open Philanthropy</td>
+                        <td>Grant</td>
+                        <td class="amount">$850,000</td>
+                        <td><span class="funding-status status-projected">Projected</span></td>
+                        <td>March & June 2026</td>
+                    </tr>
+                    <tr>
+                        <td>Private donors (recurring)</td>
+                        <td>Donations</td>
+                        <td class="amount">$69,500</td>
+                        <td><span class="funding-status status-projected">Projected</span></td>
+                        <td>Monthly</td>
+                    </tr>
+                    <tr class="total">
+                        <td colspan="2"><strong>Total Projected Income</strong></td>
+                        <td class="amount"><strong>$994,500</strong></td>
+                        <td colspan="2"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Expenditure Budget -->
+    <section class="section">
+        <div class="container">
+            <h2>FY2025-26 Expenditure Budget (Proposed)</h2>
+            <p class="budget-note">Annual totals by category. Monthly breakdowns available on request.</p>
+
+            <table class="budget-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th class="amount">Annual Budget</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3"><strong>Personnel</strong></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Salaries & wages (research, management, admin)</td>
+                        <td class="amount">$336,000</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Superannuation</td>
+                        <td class="amount">$36,520</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Insurance (OH&S, workers comp, Medicare)</td>
+                        <td class="amount">$10,230</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Recruitment & onboarding</td>
+                        <td class="amount">$7,250</td>
+                    </tr>
+                    <tr class="subtotal">
+                        <td colspan="2">Personnel subtotal</td>
+                        <td class="amount">$390,000</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3"><strong>Operations</strong></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>ICT (software, compute, AI subscriptions, hardware)</td>
+                        <td class="amount">$7,500</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Office equipment & printing</td>
+                        <td class="amount">$16,650</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Travel (local transport, flights, accommodation)</td>
+                        <td class="amount">$4,550</td>
+                    </tr>
+                    <tr class="subtotal">
+                        <td colspan="2">Operations subtotal</td>
+                        <td class="amount">$28,700</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3"><strong>Professional Services</strong></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Legal</td>
+                        <td class="amount">$10,900</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Accounting</td>
+                        <td class="amount">$22,500</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Bookkeeping</td>
+                        <td class="amount">$6,550</td>
+                    </tr>
+                    <tr class="subtotal">
+                        <td colspan="2">Professional services subtotal</td>
+                        <td class="amount">$39,950</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3"><strong>Fringe Benefits / Staff Support</strong></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Accommodation (initial establishment period)</td>
+                        <td class="amount">$24,200</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Utilities, internet, incidentals</td>
+                        <td class="amount">$28,800</td>
+                    </tr>
+                    <tr class="subtotal">
+                        <td colspan="2">Staff support subtotal</td>
+                        <td class="amount">$53,000</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3"><strong>Events & Research Activities</strong></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Research retreat (venue, AV, catering)</td>
+                        <td class="amount">$31,500</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Participant travel & accommodation</td>
+                        <td class="amount">$72,000</td>
+                    </tr>
+                    <tr class="subtotal">
+                        <td colspan="2">Events subtotal</td>
+                        <td class="amount">$103,500</td>
+                    </tr>
+
+                    <tr class="total">
+                        <td colspan="2"><strong>Total Annual Expenditure</strong></td>
+                        <td class="amount"><strong>$615,150</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="budget-note">
+                Note: This budget represents a "medium" scenario. We maintain conservative, medium, and
+                optimistic budget variants based on funding outcomes. Staffing costs are shown as category
+                totals to protect individual privacy while maintaining transparency on overall allocation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Staffing Overview -->
+    <section class="section section-alt">
+        <div class="container container-narrow">
+            <h2>Staffing Plan</h2>
+            <p>
+                Our staffing plan scales with confirmed funding. Personnel costs represent
+                approximately 63% of our total budget, which is typical for research organisations.
+            </p>
+
+            <table class="budget-table">
+                <thead>
+                    <tr>
+                        <th>Role Category</th>
+                        <th class="amount">FTE (End of Year)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Executive/Management</td>
+                        <td class="amount">1.0</td>
+                    </tr>
+                    <tr>
+                        <td>Research staff</td>
+                        <td class="amount">2.0</td>
+                    </tr>
+                    <tr>
+                        <td>Administration</td>
+                        <td class="amount">0.5</td>
+                    </tr>
+                    <tr class="total">
+                        <td><strong>Total FTE</strong></td>
+                        <td class="amount"><strong>3.5</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="budget-note">
+                Staffing ramps up throughout the year as funding is confirmed. Initial months
+                operate with reduced staff while grants are secured.
+            </p>
+        </div>
+    </section>
+
+    <!-- Cash Position -->
+    <section class="section">
+        <div class="container container-narrow">
+            <h2>Projected Cash Position</h2>
+            <p>
+                Based on our proposed budget, we project ending FY2025-26 with approximately
+                <strong>$367,540</strong> in reserves, representing roughly 7 months of operating expenses.
+                This provides a reasonable runway for the following financial year.
+            </p>
+
+            <div class="highlight-box">
+                <h3>Actual Expenditure</h3>
+                <p>
+                    Actual expenditure will be reported here as the year progresses. We will update
+                    this section monthly with:
+                </p>
+                <ul>
+                    <li>Actual vs. budgeted spending by category</li>
+                    <li>Grant receipts confirmed</li>
+                    <li>Current cash position</li>
+                    <li>Any significant variances with explanations</li>
+                </ul>
+                <p class="budget-note">First update expected: January 2026</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Governance Notes -->
+    <section class="section section-alt">
+        <div class="container container-narrow">
+            <h2>Budget Governance</h2>
+            <ul>
+                <li><strong>Approval:</strong> Annual budget approved by the Board</li>
+                <li><strong>Review:</strong> Monthly review of actuals vs. budget</li>
+                <li><strong>Variance reporting:</strong> Significant variances (>10%) reported to Board</li>
+                <li><strong>Audit:</strong> Annual financial statements will be audited</li>
+                <li><strong>Publication:</strong> This page updated monthly; annual reports published</li>
+            </ul>
+
+            <h3>Questions?</h3>
+            <p>
+                If you have questions about our budget or financial governance, please
+                <a href="contact.html">contact us</a>. We welcome scrutiny and are happy to
+                provide additional detail where it doesn't compromise individual privacy.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Certes Institute</h3>
+                    <p>
+                        Catastrophic and Existential Risk Threat Evaluation and Strategy.
+                        Providing rigorous analysis and strategic guidance for humanity's greatest challenges.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>info@certesinstitute.org</p>
+                    <p>Australia</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Certes Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation Script -->
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.main-nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
