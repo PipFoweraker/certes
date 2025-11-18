@@ -1,0 +1,38 @@
+name: Deploy to Dreamhost
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup SSH
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.DREAMHOST_SSH_KEY }}" > ~/.ssh/dreamhost_key
+        chmod 600 ~/.ssh/dreamhost_key
+        ssh-keyscan -H ${{ secrets.DREAMHOST_HOST }} >> ~/.ssh/known_hosts
+
+    - name: Deploy to Dreamhost
+      run: |
+        rsync -avz --delete \
+          --exclude='.git' \
+          --exclude='.github' \
+          --exclude='variants' \
+          --exclude='csv dump' \
+          --exclude='*.md' \
+          --exclude='.gitignore' \
+          -e "ssh -i ~/.ssh/dreamhost_key -o StrictHostKeyChecking=no" \
+          ./ ${{ secrets.DREAMHOST_USER }}@${{ secrets.DREAMHOST_HOST }}:${{ secrets.DREAMHOST_PATH }}/
+
+    - name: Cleanup
+      if: always()
+      run: rm -f ~/.ssh/dreamhost_key
