@@ -1,0 +1,10 @@
+# robots.txt for certesinstitute.org
+
+User-agent: *
+Allow: /
+
+# Exclude private retreat page from search engines
+Disallow: /retreat.html
+
+# Sitemap location
+Sitemap: https://certesinstitute.org/sitemap.xml
