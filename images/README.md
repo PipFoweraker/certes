@@ -12,6 +12,11 @@ The following team member photos are referenced in the website:
   - Recommended size: 800x800px (square)
   - Format: JPG or PNG
 
+- **lauren.jpg** - Lauren (Senior Software Engineer)
+  - Referenced in: `team.html`
+  - Recommended size: 800x800px (square)
+  - Format: JPG or PNG
+
 - **charlie-renner.jpg** - Charlie Renner (Consulting Expert)
   - Referenced in: `team.html`
   - Recommended size: 800x800px (square)
